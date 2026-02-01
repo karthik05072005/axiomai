@@ -1,0 +1,12 @@
+-- Add license fields to leads table
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS license_name_1 TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS license_name_2 TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS license_name_3 TEXT;
+
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS license_status_1 TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS license_status_2 TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS license_status_3 TEXT;
+
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS license_link_1 TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS license_link_2 TEXT;
+ALTER TABLE leads ADD COLUMN IF NOT EXISTS license_link_3 TEXT;
